@@ -1,0 +1,21 @@
+﻿assets by path [1m[32massets/images/*.png[39m[22m 289 KiB
+  asset [1m[32massets/images/watch_image.png[39m[22m 215 KiB [1m[33m[compared for emit][39m[22m [from: assets/images/watch_image.png] (auxiliary name: main)
+  asset [1m[32massets/images/watch_image_two.png[39m[22m 66.7 KiB [1m[33m[compared for emit][39m[22m [from: assets/images/watch_image_two.png] (auxiliary name: main)
+  asset [1m[32massets/images/app_logo.png[39m[22m 7.62 KiB [1m[33m[compared for emit][39m[22m [from: assets/images/app_logo.png] (auxiliary name: main)
+asset [1m[32mbundle.web.js[39m[22m 3.3 MiB [1m[33m[compared for emit][39m[22m (name: main)
+asset [1m[32mindex.html[39m[22m 1.99 KiB [1m[33m[compared for emit][39m[22m
+runtime modules 1.28 KiB 7 modules
+modules by path [1m./node_modules/[39m[22m 2.68 MiB 483 modules
+modules by path [1m./screens/[39m[22m 83.8 KiB
+  [1m./screens/Login/LoginScreen.jsx[39m[22m 6.62 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  + 11 modules
+modules by path [1m./constants/*.jsx[39m[22m 22.6 KiB
+  [1m./constants/AppColors.jsx[39m[22m 890 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  + 9 modules
+modules by path [1m./assets/[39m[22m 9.46 KiB (javascript) 289 KiB (asset)
+  javascript modules 9.34 KiB 6 modules
+  asset modules 289 KiB (asset) 126 bytes (javascript) 3 modules
+[1m./index.web.js[39m[22m 384 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+[1m./App.jsx[39m[22m 14.2 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+[1m./app.json[39m[22m 58 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.107.2 compiled [1m[32msuccessfully[39m[22m in 29528 ms

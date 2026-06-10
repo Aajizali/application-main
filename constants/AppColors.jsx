@@ -1,0 +1,38 @@
+const AppColors = {
+  color000000: '#000000',
+  color0A0A0A03: '#0A0A0A03',
+  colorFFFFFF: '#FFFFFF',
+  colorfdfdfd93: '#fdfdfd93',
+  color0A0A0A: '#0A0A0A',
+  colorF9BD38: '#F9BD38',
+  colorF9BD3810: '#F9BD381A',
+  colorFF4848: '#FF4848',
+  color111111: '#111111',
+  color1A1A1A: '#1A1A1A',
+  color1c1c1c: '#1c1c1c',
+  color8B8B8B: '#8B8B8B',
+  color444444: '#444444',
+  color484848: '#484848',
+  colorEBC300: '#EBC300',
+  color302A1D: '#302A1D',
+  colorFFFFFF03: '#ffffff12',
+  colorFFFFFF08: '#FFFFFF08',
+  colorFFFFFF50: '#FFFFFF80',
+  colorFFFFFF10: '#FFFFFF1A',
+  colorFFFFFF20: '#FFFFFF33',
+    colorAAAAAA: '#AAAAAA',
+  // New colors from DashboardScreen.jsx
+  color242424: '#242424',
+  color2A2A2A: '#2A2A2A',
+  colorC9A84C: '#C9A84C',
+  colorE2BA5F: '#E2BA5F',
+  color8A8A8A: '#8A8A8A', // Closest to AppColors.color8B8B8B but distinct
+  colorB0B0B0: '#B0B0B0',
+  color2E2E2E: '#2E2E2E',
+  colorFFD700: '#FFD700',
+  color3A3A3A: '#3A3A3A',
+  color555555: '#555',
+  color1C1C1C: '#1C1C1C',
+};
+
+export default AppColors;

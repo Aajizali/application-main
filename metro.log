@@ -1,0 +1,33 @@
+
+> FlipMazaal@0.0.1 start
+> react-native start --reset-cache
+
+
+Welcome to React Native v0.85
+Starting dev server on http://localhost:8081
+
+[31m[7m[1m ERROR [22m[27m[39m An unknown error occurred while installing React Native DevTools. Details:
+
+spawn EPERM
+[34m
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+[39m
+[33m[7m[1m WARN [22m[27m[39m the transform cache was reset.
+[34m[1m                Welcome to Metro [37mv0.84.4[39m
+[22m[39m[2m              Fast - Scalable - Integrated
+
+[22m
+[36m[7m[1m INFO [22m[27m[39m Dev server ready. Press Ctrl+C to exit.
+[36m[7m[1m INFO [22m[27m[39m Interactive mode is not supported in this environment
