@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { BackHandler, Dimensions, Platform, StyleSheet, View } from 'react-native';
+import { BackHandler, Dimensions, Platform, StyleSheet } from 'react-native';
+
 
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
 import Animated, {
@@ -34,11 +35,12 @@ function App() {
     setScreenStack((prev) => [...prev, nextScreen]);
   };
 
-  const popScreen = useCallback(() => {
+  const popScreen = () => {
     setScreenStack((prev) => (prev.length > 1 ? prev.slice(0, -1) : prev));
-  }, []);
+  };
 
   useEffect(() => {
+
     if (Platform.OS !== 'android') return;
 
     const onBackPress = () => {
@@ -78,43 +80,56 @@ function App() {
 
   const currentScreen = screenStack[screenStack.length - 1];
 
+  // Back to stable manual navigation (no transitions) to prevent login/register breakage.
+  const topScreenStyle = null;
+
   const renderScreen = () => {
+
+
     switch (currentScreen) {
       case 'login':
         return (
-          <LoginScreen
-            onBack={popScreen}
-            onSubmit={() => pushScreen('dashboard')}
-            onForgotPassword={() => pushScreen('forgetPass')}
-          />
+          <Animated.View style={[styles.transitionLayer, topScreenStyle]}>
+            <LoginScreen
+              onBack={popScreen}
+              onSubmit={() => pushScreen('dashboard')}
+              onForgotPassword={() => pushScreen('forgetPass')}
+            />
+          </Animated.View>
         );
       case 'register':
         return (
-          <RegisterScreen
-            onBack={popScreen}
-            onContinue={() => {
-              setOtpSource('register');
-              pushScreen('otp');
-            }}
-          />
+          <Animated.View style={[styles.transitionLayer, topScreenStyle]}>
+            <RegisterScreen
+              onBack={popScreen}
+              onContinue={() => {
+                setOtpSource('register');
+                pushScreen('otp');
+              }}
+            />
+          </Animated.View>
         );
       case 'forgetPass':
         return (
-          <ForgetPassScreen
-            onBack={popScreen}
-            onVerify={() => {
-              setOtpSource('forgetPass');
-              pushScreen('otp');
-            }}
-          />
+          <Animated.View style={[styles.transitionLayer, topScreenStyle]}>
+            <ForgetPassScreen
+              onBack={popScreen}
+              onVerify={() => {
+                setOtpSource('forgetPass');
+                pushScreen('otp');
+              }}
+            />
+          </Animated.View>
         );
       case 'otp':
         return (
-          <OtpScreen
-            onBack={popScreen}
-            onVerify={() => pushScreen('dashboard')}
-            onResend={() => {}}
-          />
+          <Animated.View style={[styles.transitionLayer, topScreenStyle]}>
+            <OtpScreen
+              onBack={popScreen}
+              onVerify={() => pushScreen('dashboard')}
+              onResend={() => {}}
+            />
+          </Animated.View>
         );
       case 'dashboard':
         return <DashboardScreen />;
@@ -132,6 +147,7 @@ function App() {
         );
     }
   };
+
 
   return (
     <SafeAreaProvider
@@ -158,4 +174,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000000',
   },
+  transitionLayer: {
+    ...StyleSheet.absoluteFillObject,
+  },
 });
+
